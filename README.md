@@ -23,6 +23,15 @@ ABC is India based entertainment production company with a focus on Northeast an
 
  7) Highly available, secure, and persistent shared File system in AWS cloud with EFS
 
+**Components**:
+
+**EFS** - Amazon EFS (Elastic File System) provides a simple, scalable, fully managed elastic NFS file system.
+Can serve as a centralized storage solution that is accessible from all servers, keeping files in sync across the entire infrastructure.
+
+**KMS** - AWS Key Management Service (KMS) is a secure service that helps you manage and control encryption keys.
+
+**EC2** - Amazon EC2 (Elastic Compute Cloud) offers scalable computing capacity in the AWS cloud, which allows ABC to increase or decrease capacity. This addresses the scalability limitations of their current NAS storage
+
 **Solution**
 
 **Challenge Overview:** ABC found itself constrained by a legacy NAS storage system, which lacked the necessary scalability and posed significant security vulnerabilities. The company’s vision to migrate to a cloud-based application with centralized data synchronization was hindered by the existing infrastructure’s limitations.
@@ -43,3 +52,5 @@ We demonstrated resilience by launching EC2 instances across **different availab
 
 **Hands-On Execution:** 
 The practical aspect involved connecting to EC2 instances, installing necessary utilities, and mounting the EFS filesystem to validate real-time data sharing and synchronization
+
+![diagram-export-5-4-2024-9_58_01-PM](https://github.com/Sandhyagito/AWS-Capstone-project--Secure-and-Scalable-Storage-Solutions/assets/151674108/ca615c96-bdbf-483f-ba41-f89c5051b028)
