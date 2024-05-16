@@ -26,14 +26,20 @@ ABC is India based entertainment production company with a focus on Northeast an
 **Solution**
 
 **Challenge Overview:** ABC found itself constrained by a legacy NAS storage system, which lacked the necessary scalability and posed significant security vulnerabilities. The company’s vision to migrate to a cloud-based application with centralized data synchronization was hindered by the existing infrastructure’s limitations.
+
 **Strategic Solution:**
 We created a **highly available, reliable, and secure storage distributed file system** using Amazon Elastic File System (EFS), which **allows multiple EC2 instances to share data efficiently and securely**.
+
 **Security and Reliability:** 
 To safeguard our data, we integrated **AWS Key Management Service (KMS)**, ensuring **all data stored in EFS is encrypted** and protected against unauthorized access. Also, We tackled the pressing concerns of data encryption both at rest and in transit implementing KMS fortify data integrity and confidentiality
+
 **Infrastructure Setup:** 
 Our setup included configuring EC2 instances with **custom security groups within a VPC designed for EFS**, enabling secure communication and data transfer.
+
 **Cost-Effective Scaling:** By leveraging AWS’s cloud infrastructure, we eliminated the need for costly hardware investments, **enabling ABC to dynamically scale their storage capabilities while optimizing costs for both frequently and infrequently accessed data**
+
 **Resilience and Redundancy:** 
 We demonstrated resilience by launching EC2 instances across **different availability zones**, ensuring our system remains robust against potential zone failures.
+
 **Hands-On Execution:** 
 The practical aspect involved connecting to EC2 instances, installing necessary utilities, and mounting the EFS filesystem to validate real-time data sharing and synchronization
